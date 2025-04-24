@@ -92,6 +92,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
+      <Text>Welcome to your Expo + Bun app!</Text>
         <StatusBar style="auto" />
         
         {/* Top Navigation Bar */}
