@@ -1,113 +1,50 @@
-# Expo-Convex Todo App with Bun
+# Welcome to your Expo app 👋
 
-A simple Todo application built with Expo and Convex, powered by Bun.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Prerequisites
+## Get started
 
-- [Bun](https://bun.sh/) (>= 1.0.0)
-- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+1. Install dependencies
 
-## Getting Started
+   ```bash
+   npm install
+   ```
 
-1. Clone this repository:
+2. Start the app
 
-```bash
-git clone <repository-url>
-cd <repository-name>
-```
+   ```bash
+    npx expo start
+   ```
 
-2. Install dependencies:
+In the output, you'll find options to open the app in a
 
-```bash
-bun install
-```
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-3. Start the development server:
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-```bash
-# Start both Expo and Convex servers
-bun run dev
+## Get a fresh project
 
-# Or start them separately
-bun run start      # Expo server
-bun run convex:dev # Convex server
-```
-
-## Features
-
-- Real-time Todo list with Convex backend
-- Add, toggle, and delete tasks
-- Automatic data synchronization
-
-## Tech Stack
-
-- [Expo](https://expo.dev/) - React Native development platform
-- [Convex](https://convex.dev/) - Backend with automatic real-time updates
-- [Bun](https://bun.sh/) - Fast JavaScript runtime and package manager
-- [React Native](https://reactnative.dev/) - Mobile application framework
-- [TypeScript](https://www.typescriptlang.org/) - Static typing for JavaScript
-
-## Deployment
-
-### Convex Backend
-
-To deploy the Convex backend:
-
-1. Create a Convex account at [convex.dev](https://convex.dev)
-2. Login to Convex:
+When you're ready, run:
 
 ```bash
-bun run convex login
+npm run reset-project
 ```
 
-3. Deploy your Convex functions:
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-```bash
-bun run convex deploy
-```
+## Learn more
 
-### Expo App
+To learn more about developing your project with Expo, look at the following resources:
 
-To deploy the Expo app, you can use EAS Build:
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-```bash
-bun add -d eas-cli
-bun run eas build --platform all
-```
+## Join the community
 
-## Project Structure
+Join our community of developers creating universal apps.
 
-- `App.tsx` - Main application component
-- `convex/` - Convex backend functions and schema
-  - `schema.ts` - Database schema
-  - `tasks.ts` - Task related functions (queries and mutations)
-  - `ConvexClientProvider.tsx` - React provider for Convex client
-
-## License
-
-MIT
-
-```sh
-npx create-expo --example with-typescript
-```
-
-TypeScript is a superset of JavaScript which gives you static types and powerful tooling in Visual Studio Code including autocompletion and useful inline warnings for type errors.
-
-## 🚀 How to use
-
-#### Creating a new project
-
-- Create a project: `npx create-expo --example with-typescript`
-- `cd` into the project
-
-### Adding TypeScript to existing projects
-
-- Create a blank TypeScript config: `touch tsconfig.json`
-- Run `yarn start` or `npm run start` to automatically configure TypeScript
-- Rename files to TypeScript, `.tsx` for React components and `.ts` for plain typescript files
-
-> 💡 You can disable the TypeScript setup in Expo CLI with the environment variable `EXPO_NO_TYPESCRIPT_SETUP=1 expo start`
-
-## 📝 Notes
-
-- [Expo TypeScript guide](https://docs.expo.dev/versions/latest/guides/typescript/)
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.

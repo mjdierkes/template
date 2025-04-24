@@ -36,13 +36,3 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
-
-# Convex
-convex/.env
-convex/_generated
-convex/README.md
-.convex/
-
-# Bun
-bun.lockb
-.bunfig.local
