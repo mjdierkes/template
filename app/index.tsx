@@ -5,8 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to Expo!</Text>
-      <Text style={styles.subtitle}>Edit app/index.tsx to start building your app</Text>
+      <Text style={styles.title}>Welcome to Elusive!</Text>
       <StatusBar style="auto" />
     </View>
   );
