@@ -5,7 +5,8 @@
   "scripts": {
     "start": "expo start --tunnel",
     "start-web": "expo start --web --tunnel",
-    "start-web-dev": "DEBUG=expo* expo start --web --tunnel"
+    "start-web-dev": "DEBUG=expo* expo start --web --tunnel",
+    "web": "expo start --web --tunnel --port 6080"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
